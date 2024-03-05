@@ -1,6 +1,6 @@
 import React from "react";
-
 import "./TaskList.css";
+import PropTypes from "prop-types";
 
 export default function TaskList({ title }) {
   return (
@@ -9,4 +9,8 @@ export default function TaskList({ title }) {
       <div className="content"></div>
     </div>
   );
+}
+
+TaskList.propTypes = {
+  title: PropTypes.string.isRequired
 }
